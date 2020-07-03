@@ -11,7 +11,7 @@ class Recommender:
     def __init__(self, items):
         self.items = items
 
-    def recommend_random(self, num:int)->list:
+    def recommend_random(self, num:str)->list:
         """
         Given a list of items, return n results randomly.
 
@@ -60,7 +60,13 @@ if __name__ == '__main__':
              'The Tree of Life',
              'Portrait of Dorian Gray',
              'Parasite']
-    
     rec = Recommender(ITEMS)
     result = rec.recommend_random(3)
     print(result)
+
+
+class Random:
+    """
+    Just a random class to annoy
+    """
+    pass
